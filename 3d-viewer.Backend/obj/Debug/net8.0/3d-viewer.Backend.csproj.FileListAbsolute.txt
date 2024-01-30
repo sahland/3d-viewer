@@ -1,0 +1,5 @@
+D:\VSU\VScode\3d-viewer\3d-viewer.Backend\obj\Debug\net8.0\3d-viewer.Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSU\VScode\3d-viewer\3d-viewer.Backend\obj\Debug\net8.0\3d-viewer.Backend.AssemblyInfoInputs.cache
+D:\VSU\VScode\3d-viewer\3d-viewer.Backend\obj\Debug\net8.0\3d-viewer.Backend.AssemblyInfo.cs
+D:\VSU\VScode\3d-viewer\3d-viewer.Backend\obj\Debug\net8.0\3d-viewer.Backend.csproj.CoreCompileInputs.cache
+D:\VSU\VScode\3d-viewer\3d-viewer.Backend\obj\Debug\net8.0\3d-viewer.Backend.sourcelink.json
