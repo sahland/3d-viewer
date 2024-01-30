@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3d-viewer.Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc7ab63e8771da955090a21991eeb2fa5e3b5d72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56d808027662cdfad1d0e319eea788804ceddd12")]
 [assembly: System.Reflection.AssemblyProductAttribute("3d-viewer.Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3d-viewer.Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

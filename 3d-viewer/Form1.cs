@@ -14,7 +14,13 @@ namespace _3d_viewer
 
         private void AciraMenu_Click(object sender, EventArgs e)
         {
+            LMenu();
+            this.Controls.Add(LeftMenu);
+        }
 
+        private void Close_Click(object sender, EventArgs e)
+        {
+            LeftMenu.Visible = false;
         }
     }
 }
