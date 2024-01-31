@@ -103,11 +103,12 @@ namespace _3d_viewer
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Resources.Background;
-            ClientSize = new Size(1280, 720);
+            ClientSize = new Size(1268, 720);
             Controls.Add(Top);
-            FormBorderStyle = FormBorderStyle.None;
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Background";
-            Text = "Form1";
+            Text = "Akira";
             Top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)Camera).EndInit();
             ((System.ComponentModel.ISupportInitialize)Github).EndInit();

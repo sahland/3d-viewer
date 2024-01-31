@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rljJ7SeT2TVi1TJOMTGbVZBTzuXCD7zSNabZFa9uytkkzJepoboak/NPkmxm0gmpxA34ILUUkAS1ciFVc9eESQ==",
+  "dgSpecHash": "0KesO+jh8NCYbNfDzrSxsx0QifstJ2QrlvKafoN7Iq7/EwmWkRMN0z/dGjkplR/MMNh9Zlc1brCXUsPB80xtbg==",
   "success": true,
   "projectFilePath": "D:\\VSU\\VScode\\3d-viewer\\3d-viewer.Backend\\3d-viewer.Backend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Auriel\\.nuget\\packages\\sharpgl\\3.1.1\\sharpgl.3.1.1.nupkg.sha512"
+  ],
   "logs": []
 }
