@@ -17,3 +17,7 @@ G:\Unity\3d-viewer\3d-viewer.Frontend\obj\Debug\3d-viewer.Frontend.csproj.CopyCo
 G:\Unity\3d-viewer\3d-viewer.Frontend\obj\Debug\3d-viewer.Frontend.exe
 G:\Unity\3d-viewer\3d-viewer.Frontend\obj\Debug\3d-viewer.Frontend.pdb
 G:\Unity\3d-viewer\3d-viewer.Frontend\obj\Debug\_3d_viewer.Frontend.MainForm.resources
+G:\Unity\3d-viewer\3d-viewer.Frontend\bin\Debug\3d-viwer.Backend.dll
+G:\Unity\3d-viewer\3d-viewer.Frontend\bin\Debug\3d-viwer.Backend.pdb
+G:\Unity\3d-viewer\3d-viewer.Frontend\bin\Debug\3d-viwer.Backend.dll.config
+G:\Unity\3d-viewer\3d-viewer.Frontend\obj\Debug\_3d_viewer.Frontend.InfoControl.resources

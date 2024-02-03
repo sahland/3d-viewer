@@ -1,3 +1,15 @@
 G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viewer.Backend.csproj.AssemblyReference.cache
-G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viewer.Backend.csproj.SuggestedBindingRedirects.cache
 G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viewer.Backend.csproj.CoreCompileInputs.cache
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\3d-viwer.Backend.dll.config
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\3d-viwer.Backend.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\3d-viwer.Backend.pdb
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.SceneGraph.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.Serialization.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\System.Drawing.Common.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.xml
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.SceneGraph.xml
+G:\Unity\3d-viewer\3d-viwer.Backend\bin\Debug\SharpGL.Serialization.xml
+G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viewer.Backend.csproj.CopyComplete
+G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viwer.Backend.dll
+G:\Unity\3d-viewer\3d-viwer.Backend\obj\Debug\3d-viwer.Backend.pdb

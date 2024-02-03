@@ -14,11 +14,14 @@ namespace _3d_viewer.Frontend
 {
     public partial class MainForm : Form
     {
-        Tests test = new Tests();
+        Tests test;
         
         public MainForm()
         {
             InitializeComponent();
+
+            test = new Tests();
+            infoControl = new InfoControl();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -34,6 +37,7 @@ namespace _3d_viewer.Frontend
 
         private void AciraMenu_Click(object sender, EventArgs e)
         {
+            
             if(_lMenuIsOpen)
             {
                 return;
@@ -41,14 +45,26 @@ namespace _3d_viewer.Frontend
 
             LeftPanel();
             Controls.Add(LeftMenu);
-            _lMenuIsOpen = true;
+            LeftMenu.BringToFront();
+            _lMenuIsOpen = true;         
         }
-
+        
         private void GLwindow_OpenGLDraw(object sender, SharpGL.RenderEventArgs args)
         {
             OpenGL gl = GLwindow.OpenGL;
 
             test.testRender(gl);
+        }
+
+        private void Github_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/sahland/3d-viewer");
+        }
+
+        private void Info_Click(object sender, EventArgs e)
+        {
+            Controls.Add(infoControl);
+            infoControl.BringToFront();
         }
     }
 }

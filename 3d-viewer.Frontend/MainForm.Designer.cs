@@ -37,6 +37,7 @@ namespace _3d_viewer.Frontend
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         /// 
+        
         private void LeftPanel()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Background));
@@ -108,6 +109,7 @@ namespace _3d_viewer.Frontend
             Info.Size = new Size(65, 65);
             Info.TabIndex = 2;
             Info.TabStop = false;
+            Info.Click += Info_Click;
             // 
             // Close
             // 
@@ -121,10 +123,14 @@ namespace _3d_viewer.Frontend
             Close.Click += Close_Click;
 
         }
+        
 
         private void InitializeComponent()
         {
             this.GLwindow = new SharpGL.OpenGLControl();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.Top = new System.Windows.Forms.Panel();
             this.Camera = new System.Windows.Forms.PictureBox();
             this.Github = new System.Windows.Forms.PictureBox();
@@ -183,6 +189,7 @@ namespace _3d_viewer.Frontend
             this.Github.Size = new System.Drawing.Size(65, 65);
             this.Github.TabIndex = 4;
             this.Github.TabStop = false;
+            this.Github.Click += new System.EventHandler(this.Github_Click);
             // 
             // AciraMenu
             // 
@@ -211,7 +218,7 @@ namespace _3d_viewer.Frontend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_3d_viewer.Frontend.Properties.Resources.Background;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1280, 681);
             this.Controls.Add(this.Top);
             this.Controls.Add(this.GLwindow);
@@ -237,12 +244,20 @@ namespace _3d_viewer.Frontend
         private PictureBox Github;
         private PictureBox Camera;
 
+        
         private Panel LeftMenu;
         private PictureBox Import;
         private PictureBox NextModel;
         private PictureBox NextScene;
         private PictureBox Info;
         private PictureBox Close;
+
+        InfoControl infoControl;
+        
+        private BackgroundWorker backgroundWorker1;
+        private BackgroundWorker backgroundWorker2;
+        private BackgroundWorker backgroundWorker3;
+
     }
 }
 
