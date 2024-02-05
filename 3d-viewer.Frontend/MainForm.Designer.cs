@@ -12,6 +12,7 @@ namespace _3d_viewer.Frontend
     partial class MainForm
     {
         private Boolean _lMenuIsOpen;
+        private OpenGL gl;
         /// <summary>
         /// Обязательная переменная конструктора.
         /// </summary>
@@ -79,6 +80,7 @@ namespace _3d_viewer.Frontend
             Import.Size = new Size(65, 65);
             Import.TabIndex = 2;
             Import.TabStop = false;
+            Import.Click += Import_Click;
             // 
             // NextModel
             // 
@@ -155,6 +157,7 @@ namespace _3d_viewer.Frontend
             this.GLwindow.RenderTrigger = SharpGL.RenderTrigger.TimerBased;
             this.GLwindow.Size = new System.Drawing.Size(1280, 600);
             this.GLwindow.TabIndex = 1;
+            this.GLwindow.OpenGLInitialized += new System.EventHandler(this.GLwindow_OpenGLInitialized);
             this.GLwindow.OpenGLDraw += new SharpGL.RenderEventHandler(this.GLwindow_OpenGLDraw);
             // 
             // Top
@@ -253,6 +256,7 @@ namespace _3d_viewer.Frontend
         private PictureBox Close;
 
         InfoControl infoControl;
+        OpenFileDialog ofd;
         
         private BackgroundWorker backgroundWorker1;
         private BackgroundWorker backgroundWorker2;

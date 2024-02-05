@@ -1,4 +1,6 @@
 ﻿using _3d_viwer.Backend;
+using _3d_viwer.Backend.Lighting;
+using _3d_viwer.Backend.ModelLoader;
 using SharpGL;
 using System;
 using System.Collections.Generic;
@@ -15,13 +17,19 @@ namespace _3d_viewer.Frontend
     public partial class MainForm : Form
     {
         Tests test;
+        ImportWindow iw;
+        StandardLighting sl;
         
         public MainForm()
         {
             InitializeComponent();
 
             test = new Tests();
+            iw = new ImportWindow();
+            
+
             infoControl = new InfoControl();
+            ofd = new OpenFileDialog();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -48,13 +56,6 @@ namespace _3d_viewer.Frontend
             LeftMenu.BringToFront();
             _lMenuIsOpen = true;         
         }
-        
-        private void GLwindow_OpenGLDraw(object sender, SharpGL.RenderEventArgs args)
-        {
-            OpenGL gl = GLwindow.OpenGL;
-
-            test.testRender(gl);
-        }
 
         private void Github_Click(object sender, EventArgs e)
         {
@@ -66,5 +67,31 @@ namespace _3d_viewer.Frontend
             Controls.Add(infoControl);
             infoControl.BringToFront();
         }
+
+        private void Import_Click(object sender, EventArgs e)
+        {
+            iw.openWindow(ofd);
+        }
+
+
+        #region OPENGL
+        private void GLwindow_OpenGLDraw(object sender, SharpGL.RenderEventArgs args)
+        {
+            gl = GLwindow.OpenGL;
+
+            test.testRender(gl);
+        }
+
+        private void GLwindow_OpenGLInitialized(object sender, EventArgs e)
+        {
+            gl = GLwindow.OpenGL;
+            //gl.ClearColor(197.0f / 255.0f, 144.0f / 255.0f, 191.0f / 255.0f, 1.0f);
+            //gl.ClearColor(0.8f, 0.8f, 0.8f, 1.0f);
+
+            sl = new StandardLighting();
+
+            sl.StandLight(gl);
+        }
+        #endregion
     }
 }
